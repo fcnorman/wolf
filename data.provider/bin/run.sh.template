@@ -42,6 +42,14 @@ export BROKER_STRING=$BROKER_STRING
 
 $WOLF_DATA_PROVIDER_HOME/src/4.schedule.all.today.sh
 
-sed -i 's/\/home\/ubuntu/${WOLF_DATA_PROVIDER_HOME}/g' $WOLF_DATA_PROVIDER_HOME/src/5.crontab.txt > $WOLF_DATA_PROVIDER_HOME/src/5.crontab.tmp
+
+echo $WOLF_DATA_PROVIDER_HOME >tmp.txt
+sed -i -e 's/\//\\\//g' tmp.txt
+REPLACE_STRING=`cat tmp.txt`
+sed -e "s/\/home\/ubuntu\/data.provider/$REPLACE_STRING/g" $WOLF_DATA_PROVIDER_HOME/src/5.crontab.txt > $WOLF_DATA_PROVIDER_HOME/src/5.crontab.tmp
+unset REPLACE_STRING
+rm -rf tmp.txt
 
 cat $WOLF_DATA_PROVIDER_HOME/src/5.crontab.tmp | crontab -
+rm -rf $WOLF_DATA_PROVIDER_HOME/src/5.crontab.tmp
+
