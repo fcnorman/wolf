@@ -6,4 +6,6 @@
 /data.provider/bin/kafka-python/**
 /data.provider/bin/run.sh
 /data.provider/src/5.crontab.tmp
+/data.provider/log/
+/data.provider/log/**
 
