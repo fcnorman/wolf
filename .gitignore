@@ -9,4 +9,8 @@
 /data.provider/src/5.crontab.tmp
 /data.provider/log/
 /data.provider/log/**
+/.idea/
+/.idea/**
+/rule.engine/.idea/
+/rule.engine/.idea/**
 
