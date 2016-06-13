@@ -3,8 +3,11 @@
 # remove all previous java
 sudo apt-get purge openjdk-\* icedtea-\* icedtea6-\*
 
-# install java 1.7
-sudo apt-get install openjdk-7-jdk
+# install java 1.8
+#sudo apt-get install openjdk-8-jdk  - works with Ubuntu 14.10 and higher
+sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
 
 sudo apt-get install zookeeper
 # zookeeper conf is in /etc/zookeeper/conf/zoo.cfg
