@@ -28,7 +28,7 @@ dependencies {
 
 shadowJar {
     manifest {
-        attributes 'Main-Class': 'rule.engine.ExecutionBolt'
+        attributes 'Main-Class': 'rule.engine.RuleEngineTopology'
         attributes 'Class-Path': 'wolf rule.engine libs/ lib/'
     }
 }
