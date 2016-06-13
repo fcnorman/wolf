@@ -1,8 +1,17 @@
 #Wolf
-Trade foreign exchange with ease.
+Make money while you sleep trading foreign exchange.
+
+Wolf is a platform for:
+
+  1. aggregating FX data from ticks from historical and live feeds,
+  2. deriving standard and custom indicators,
+  3. analyzing via R and custom machine learning code,
+  4. trading foreign exchange instruments with ease.
+
+This is an open-source project and collaborators are welcome.
 
 ### Introduction
-Wolf Trading Platform is an interactive platform that supports real-time financial data visualization, as well as historical data lookup. It executes simple trading rules in real time and is simple to integrate with the brokerage services. It is currently not deployed publicly. [Here](https://www.youtube.com/watch?v=0Q5XMwENRuY#t=23) and [here](https://www.youtube.com/watch?v=y7Gr5F1FHco&list=UU5KnJYd4JU21Qu8E8GgEexg) are screen casts from Wolf's operation.
+Wolf Trading Platform is an interactive platform that supports real-time financial data visualization, as well as historical data lookup. It executes simple trading rules in real time and is simple to integrate with the brokerage services. It is currently not deployed publicly.
 
 Below is an overview of the architecture of Wolf:
 
@@ -25,24 +34,29 @@ The top plot shows the latest minute of trade. The bottom plot shows the last ho
 
 ### Getting started
 
-I am currently working on the deployment scripts, all the modules should be easy to deploy using the following commands:
+Deployment scripts are in progress.  All the modules should be easy to deploy using the following commands:
 ```
 git clone https://github.com/slawekj/wolf.git
 ./wolf/<module name>/bin/install.sh
 ./wolf/<module name>/bin/run.sh
 ```
+
 Modules should be deployed, possibly to different physical machines/clusters, in the following order:
   1. data.router (deployment scripts ready)
   2. data.provider (deployment scripts ready)
   3. rule.engine (deployment scripts ready)
-  4. data.aggregator.rt (deployment scripts in preparation)
-  5. data.aggregator.batch (deployment scripts in preparation)
-  6. restful.cache.rt (deployment scripts in preparation)
-  7. restful.cache.batch (deployment scripts in preparation)
-  8. restful.rule.submission (deployment scripts in preparation)
-  9. web.interface (deployment scripts in preparation)
+  4. data.aggregator.rt (deployment scripts in progress)
+  5. data.aggregator.batch (deployment scripts in progress)
+  6. restful.cache.rt (deployment scripts in progress)
+  7. restful.cache.batch (deployment scripts in progress)
+  8. restful.rule.submission (deployment scripts in progress)
+  9. web.interface (deployment scripts in progress)
 
-Deployment scripts are tested on Ubuntu 14.04 distribution, which is available [here](http://releases.ubuntu.com/14.04/ubuntu-14.04.4-server-amd64.iso). You should have sudo permissions and git installed:
+Deployment scripts have been tested on an Ubuntu 14.04 distribution, which is available [here](http://releases.ubuntu.com/14.04/ubuntu-14.04.4-server-amd64.iso). You should have sudo permissions and git installed:
 ```
 sudo apt-get install git
 ```
+
+Most scripts include instructions for deploying on Amazon AWS servers, although we encourage the community to add support for other configurations.
+
+
