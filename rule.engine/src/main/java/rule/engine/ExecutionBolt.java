@@ -1,6 +1,6 @@
 package rule.engine;
 
-import org.apache.logging.log4j.core.Logger;
+import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.apache.storm.task.OutputCollector;
 import org.apache.storm.task.TopologyContext;
@@ -15,7 +15,7 @@ public class ExecutionBolt extends BaseRichBolt implements SymbolBank {
 	/**
 	 * 
 	 */
-	private static final Logger LOG = LogManager.getLogger(ExecutionBolt.class);
+	private static final Logger LOG = LogManager.getLogger();
 	OutputCollector _collector;
 	ApiExecutor ae = new ApiExecutor();
 

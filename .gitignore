@@ -13,4 +13,10 @@
 /.idea/**
 /rule.engine/.idea/
 /rule.engine/.idea/**
+/rule.engine/.gradle/
+/rule.engine/.gradle/**
+/rule.engine/bin/storm/
+/rule.engine/bin/storm/**
+/rule.engine/build/
+/rule.engine/build/**
 
