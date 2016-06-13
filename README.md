@@ -6,7 +6,7 @@ Wolf Trading Platform is an interactive platform that supports real-time financi
 
 Below is an overview of the architecture of Wolf:
 
-![alt tag](https://raw.githubusercontent.com/slawekj/wolf/master/images/architecture.png "Architecture of Wolf")
+![alt tag](https://raw.githubusercontent.com/fcnorman/wolf/master/images/architecture2.png "Architecture of Wolf")
 
 Wolf uses the following modules:
 
