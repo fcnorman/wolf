@@ -15,18 +15,21 @@ sudo apt-get install zookeeper
 sudo apt-get install unzip
 ###wget http://mirror.symnds.com/software/Apache/incubator/storm/apache-storm-0.9.2-incubating/apache-storm-0.9.2-incubating.zip
 ###unzip apache-storm-0.9.2-incubating.zip
+wget http://apache.mirrors.hoobly.com/storm/apache-storm-1.0.1/apache-storm-1.0.1.tar.gz
+gunzip apache-storm-1.0.1.tar.gz
+tar xvf apache-storm-1.0.1.tar
 
 # we will also need storm-kafka integration jars in mvn repository
 # this step might be done on dev machine, not production server
 # this step will install storm-core 0.9.3 and storm-kafka 0.9.3 and kafka_2.9.2 0.8.1.1 to local mvn repository
-sudo apt-get purge maven\*
-sudo apt-get install maven
-git clone https://github.com/apache/storm.git
-cd storm
-git checkout tags/v1.0.1
-mvn clean install -DskipTests=true
+###sudo apt-get purge maven\*
+###sudo apt-get install maven
+###git clone https://github.com/apache/storm.git
+###cd storm
+###git checkout tags/v1.0.1
+###mvn clean install -DskipTests=true
 # once this is done we can install rule engine
-cd ..
+###cd ..
 cd ..
 # this installs a current version of gradle (better than maven)
 sudo add-apt-repository ppa:cwchien/gradle

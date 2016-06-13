@@ -23,5 +23,8 @@
 /rule.engine/bin/incubator-storm/**
 /rule.engine/target/
 /rule.engine/target/**
+/rule.engine/bin/apache-storm-1.0.1.tar
+/rule.engine/bin/apache-storm-1.0.1/
+/rule.engine/bin/apache-storm-1.0.1/**
 /histdata.com/data/
 /histdata.com/data/**
