@@ -3,6 +3,8 @@
 /data.router/bin/kafka_2.9.2-0.8.1.1.*
 /data.router/bin/kafka_2.9.2-0.8.1.1/
 /data.router/bin/kafka_2.9.2-0.8.1.1/**
+/data.router/bin/kafka_2.11-0.10.0.0/
+/data.router/bin/kafka_2.11-0.10.0.0/**
 /data.router/bin/*.log
 /data.provider/bin/kafka-python/
 /data.provider/bin/kafka-python/**
@@ -28,3 +30,6 @@
 /rule.engine/bin/apache-storm-1.0.1/**
 /histdata.com/data/
 /histdata.com/data/**
+/data.aggregator.batch/log/
+/data.aggregator.batch/log/**
+
