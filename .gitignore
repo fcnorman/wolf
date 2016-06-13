@@ -1,3 +1,5 @@
+/.idea/
+/.idea/**
 /data.router/bin/kafka_2.9.2-0.8.1.1.*
 /data.router/bin/kafka_2.9.2-0.8.1.1/
 /data.router/bin/kafka_2.9.2-0.8.1.1/**
@@ -9,8 +11,6 @@
 /data.provider/src/5.crontab.tmp
 /data.provider/log/
 /data.provider/log/**
-/.idea/
-/.idea/**
 /rule.engine/.idea/
 /rule.engine/.idea/**
 /rule.engine/.gradle/
@@ -19,4 +19,9 @@
 /rule.engine/bin/storm/**
 /rule.engine/build/
 /rule.engine/build/**
-
+/rule.engine/bin/incubator-storm/
+/rule.engine/bin/incubator-storm/**
+/rule.engine/target/
+/rule.engine/target/**
+/histdata.com/data/
+/histdata.com/data/**
