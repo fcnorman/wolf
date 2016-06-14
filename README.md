@@ -34,23 +34,23 @@ The top plot shows the latest minute of trade. The bottom plot shows the last ho
 
 ### Getting started
 
-Deployment scripts are in progress.  All the modules should be easy to deploy using the following commands:
+Deployment scripts are complete.  All the modules should be easy to deploy using the following commands:
 ```
-git clone https://github.com/slawekj/wolf.git
+git clone https://github.com/fcnorman/wolf.git   (until changes get merged back into slawekj)
 ./wolf/<module name>/bin/install.sh
 ./wolf/<module name>/bin/run.sh
 ```
 
 Modules should be deployed, possibly to different physical machines/clusters, in the following order:
-  1. data.router (deployment scripts ready)
-  2. data.provider (deployment scripts ready)
-  3. rule.engine (deployment scripts ready)
-  4. data.aggregator.rt (deployment scripts ready)
-  5. data.aggregator.batch (deployment scripts ready)
-  6. restful.cache.rt (deployment scripts ready)
-  7. restful.cache.batch (deployment scripts ready)
-  8. restful.rule.submission (deployment scripts ready)
-  9. web.interface (deployment scripts in progress)
+  1. data.router
+  2. data.provider
+  3. rule.engine
+  4. data.aggregator.rt
+  5. data.aggregator.batch
+  6. restful.cache.rt
+  7. restful.cache.batch
+  8. restful.rule.submission
+  9. web.interface
 
 Deployment scripts have been tested on an Ubuntu 14.04 distribution, which is available [here](http://releases.ubuntu.com/14.04/ubuntu-14.04.4-server-amd64.iso). You should have sudo permissions and git installed:
 ```

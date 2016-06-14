@@ -1,7 +1,7 @@
 restful.cache.service.rt
 ========================
 
-This is the wolf data.provider module.
+This is the wolf restful.cache.service.rt module.
 
 To install:
 ```

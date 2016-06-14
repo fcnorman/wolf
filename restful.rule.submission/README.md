@@ -1,7 +1,7 @@
 restful.rule.submission
 =======================
 
-This is the wolf data.provider module.
+This is the wolf restful.rule.submission module.
 
 To install:
 ```
