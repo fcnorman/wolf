@@ -45,7 +45,7 @@ Modules should be deployed, possibly to different physical machines/clusters, in
   1. data.router (deployment scripts ready)
   2. data.provider (deployment scripts ready)
   3. rule.engine (deployment scripts ready)
-  4. data.aggregator.rt (deployment scripts in progress)
+  4. data.aggregator.rt (deployment scripts ready)
   5. data.aggregator.batch (deployment scripts ready)
   6. restful.cache.rt (deployment scripts in progress)
   7. restful.cache.batch (deployment scripts in progress)

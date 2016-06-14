@@ -61,6 +61,13 @@ To run:
 ```
 ./run.sh and let it run.  Check ps -ef to see the processes running.  Check log files
 for errors.
+
+You can check the status of cassandra by using the command: nodetool status
+
+You can also check the status of the cassandra service by using the command: sudo service cassandra status
+
+Cassandra log files are in /var/log/cassandra
+
 ```
 
 To stop:
