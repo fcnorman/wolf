@@ -44,5 +44,7 @@
 /restful.rule.submission/log/**
 /restful.rule.submission/bin/run.sh
 /web.interface/bin/run.sh
+/web.interface/src/js/flot/
+/web.interface/src/js/flot/**
 
 
