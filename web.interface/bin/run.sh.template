@@ -2,5 +2,5 @@
 
 cd ../src
 
-php -S xxx.xxx.xxx.xxx:8000
+php -S ec2-xxx-xxx-xxx-xxx.compute-1.amazonaws.com:8000
 
