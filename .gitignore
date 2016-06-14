@@ -32,4 +32,4 @@
 /histdata.com/data/**
 /data.aggregator.batch/log/
 /data.aggregator.batch/log/**
-
+/data.aggregator.batch/bin/run.sh

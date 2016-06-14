@@ -1,14 +1,14 @@
-data.provider
-=============
+data.aggregator.batch
+=====================
 
-This is the wolf data.provider module.
+This is the wolf data.aggregator.batch module.
 
 To install:
 ```
 PROJECT_DIR=<your project dir>
 cd $PROJECT_DIR
 cd wolf
-cd data.provider
+cd data.aggregator.batch
 cd bin
 
 nano install.sh and make sure you are Ok with it.

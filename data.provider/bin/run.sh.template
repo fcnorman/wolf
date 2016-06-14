@@ -50,6 +50,8 @@ sed -e "s/\/home\/ubuntu\/data.provider/$REPLACE_STRING/g" $WOLF_DATA_PROVIDER_H
 unset REPLACE_STRING
 rm -rf tmp.txt
 
-cat $WOLF_DATA_PROVIDER_HOME/src/5.crontab.tmp | crontab -
-rm -rf $WOLF_DATA_PROVIDER_HOME/src/5.crontab.tmp
-
+if [ -f $WOLF_DATA_PROVIDER_HOME/../data.aggregator.batch/src/crontab.tmp ]; then
+   cat $WOLF_DATA_PROVIDER_HOME/src/5.crontab.tmp $WOLF_DATA_PROVIDER_HOME/../data.aggregator.batch/src/crontab.tmp | crontab -
+else
+   cat $WOLF_DATA_PROVIDER_HOME/src/5.crontab.tmp | crontab -
+fi
