@@ -49,7 +49,7 @@ Modules should be deployed, possibly to different physical machines/clusters, in
   5. data.aggregator.batch (deployment scripts ready)
   6. restful.cache.rt (deployment scripts ready)
   7. restful.cache.batch (deployment scripts ready)
-  8. restful.rule.submission (deployment scripts in progress)
+  8. restful.rule.submission (deployment scripts ready)
   9. web.interface (deployment scripts in progress)
 
 Deployment scripts have been tested on an Ubuntu 14.04 distribution, which is available [here](http://releases.ubuntu.com/14.04/ubuntu-14.04.4-server-amd64.iso). You should have sudo permissions and git installed:

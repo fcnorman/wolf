@@ -40,5 +40,8 @@
 /restful.cache.service.batch/log/
 /restful.cache.service.batch/log/**
 /restful.cache.service.batch/bin/run.sh
+/restful.rule.submission/log/
+/restful.rule.submission/log/**
+/restful.rule.submission/bin/run.sh
 
 
