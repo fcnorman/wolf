@@ -37,5 +37,8 @@
 /restful.cache.service.rt/log/
 /restful.cache.service.rt/log/**
 /restful.cache.service.rt/bin/run.sh
+/restful.cache.service.batch/log/
+/restful.cache.service.batch/log/**
+/restful.cache.service.batch/bin/run.sh
 
 

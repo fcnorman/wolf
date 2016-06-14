@@ -48,7 +48,7 @@ Modules should be deployed, possibly to different physical machines/clusters, in
   4. data.aggregator.rt (deployment scripts ready)
   5. data.aggregator.batch (deployment scripts ready)
   6. restful.cache.rt (deployment scripts ready)
-  7. restful.cache.batch (deployment scripts in progress)
+  7. restful.cache.batch (deployment scripts ready)
   8. restful.rule.submission (deployment scripts in progress)
   9. web.interface (deployment scripts in progress)
 
