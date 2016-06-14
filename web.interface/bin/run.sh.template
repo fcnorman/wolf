@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ../src
+
+php -S xxx.xxx.xxx.xxx:8000
+

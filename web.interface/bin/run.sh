@@ -2,5 +2,5 @@
 
 cd ../src
 
-php -S localhost:8000
+php -S 52.72.16.7:8000
 
