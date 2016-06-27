@@ -12,6 +12,8 @@
 /data.provider/bin/kafka-python/**
 /data.provider/bin/run.sh
 /data.provider/bin/tmp.txt
+/data.provider/bin/.kafkahost.properties
+/data.provider/bin/.cqlhost.properties
 /data.provider/src/5.crontab.tmp
 /data.provider/log/
 /data.provider/log/**
