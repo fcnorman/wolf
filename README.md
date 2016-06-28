@@ -43,7 +43,7 @@ git clone https://github.com/fcnorman/wolf.git   (until changes get merged back 
 
 Modules should be deployed, possibly to different physical machines/clusters, in the following order:
   1. data.router
-  2. data.provider
+  2. data.provider (or data.provider.oanda if you have an OANDA account and an OANDA API KEY)
   3. rule.engine
   4. data.aggregator.rt
   5. data.aggregator.batch
