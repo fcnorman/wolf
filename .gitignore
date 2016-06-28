@@ -17,6 +17,10 @@
 /data.provider/src/5.crontab.tmp
 /data.provider/log/
 /data.provider/log/**
+/data.provider.oanda/build/
+/data.provider.oanda/build/**
+/data.provider.oanda/.gradle/
+/data.provider.oanda/.gradle/**
 /rule.engine/.idea/
 /rule.engine/.idea/**
 /rule.engine/.gradle/

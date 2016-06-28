@@ -16,10 +16,6 @@ if [ ! -d /usr/lib/jvm/java-8-oracle ]; then
    source /etc/profile.d/java.sh
 fi
 
-# old
-#wget http://mirror.cogentco.com/pub/apache/kafka/0.8.1.1/kafka_2.9.2-0.8.1.1.tgz
-#tar xvzf kafka_2.9.2-0.8.1.1.tgz
-
 # if the old kafka version is installed...
 if [ -d kafka_2.9.2-0.8.1.1 ]; then
   # ...then remove it

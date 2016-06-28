@@ -19,4 +19,7 @@ sleep 20
     --replication-factor 1 --partitions 1 --topic forex
 ./kafka_2.11-0.10.0.0/bin/kafka-topics.sh --create --zookeeper $ZK_HOST:2181 \
     --replication-factor 1 --partitions 1 --topic forexJ
+./kafka_2.11-0.10.0.0/bin/kafka-topics.sh --create --zookeeper $ZK_HOST:2181 \
+    --replication-factor 1 --partitions 1 --topic ticks
+
 
