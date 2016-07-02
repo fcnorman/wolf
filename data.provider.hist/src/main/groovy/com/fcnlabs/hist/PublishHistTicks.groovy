@@ -82,7 +82,7 @@ class PublishHistTicks {
                         KeyedMessage<String, String> data = new KeyedMessage<String, String>("histticks", record)
 
                         // Send the message
-                        producer.send(data)
+                        producer.send(record)
 
                         processedRecords++
 
