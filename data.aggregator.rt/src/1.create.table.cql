@@ -3,6 +3,16 @@ CREATE KEYSPACE IF NOT EXISTS janusz_forex_rt_demo WITH replication = {
   'replication_factor': '2'
 };
 
+CREATE KEYSPACE IF NOT EXISTS oanda_ticks WITH replication = {
+  'class': 'SimpleStrategy',
+  'replication_factor': '2'
+};
+
+CREATE KEYSPACE IF NOT EXISTS hist_ticks WITH replication = {
+  'class': 'SimpleStrategy',
+  'replication_factor': '2'
+};
+
 USE janusz_forex_rt_demo;
 
 CREATE TABLE IF NOT EXISTS ticks (
@@ -25,4 +35,40 @@ CREATE TABLE IF NOT EXISTS ticks_avg_s (
 
 INSERT INTO ticks (pair_day,issued_at,bid,ask) VALUES ('usdjpy:2011-02-03','2011-02-03 04:05:00.000+0000',0.12,0.13) USING TTL 3600;
 
+USE oanda_ticks;
 
+CREATE TABLE IF NOT EXISTS eurusd_ticks (
+   day   date,
+   nanos time, 
+   bid   float, 
+   ask   float, 
+   PRIMARY KEY (day, nanos)
+) WITH compaction = {'class' : 'LeveledCompactionStrategy' };
+
+CREATE TABLE IF NOT EXISTS eurusd_ticks_tps (
+   day  date,
+   hour int,
+   min  int,
+   sec  int,
+   tps  int,
+   PRIMARY KEY (day, hour, min, sec)
+) WITH compaction = {'class' : 'LeveledCompactionStrategy' };
+
+USE hist_ticks;
+
+CREATE TABLE IF NOT EXISTS eurusd_ticks (
+   day   date,
+   nanos time, 
+   bid   float, 
+   ask   float, 
+   PRIMARY KEY (day, nanos)
+) WITH compaction = {'class' : 'LeveledCompactionStrategy' };
+
+CREATE TABLE IF NOT EXISTS eurusd_ticks_tps (
+   day  date,
+   hour int,
+   min  int,
+   sec  int,
+   tps  int,
+   PRIMARY KEY (day, hour, min, sec)
+) WITH compaction = {'class' : 'LeveledCompactionStrategy' };
