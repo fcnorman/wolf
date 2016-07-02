@@ -38,6 +38,8 @@
 /rule.engine/bin/apache-storm-1.0.1/**
 /histdata.com/data/
 /histdata.com/data/**
+/histdata.com/data/csv/
+/histdata.com/data/csv/**
 /data.aggregator.batch/log/
 /data.aggregator.batch/log/**
 /data.aggregator.batch/bin/run.sh
