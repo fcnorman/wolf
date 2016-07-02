@@ -79,10 +79,10 @@ class PublishHistTicks {
                     for (record in csv.iterator()) {
 
                         // Create message to be sent to "tick_topic" topic with the tick
-                        KeyedMessage<String, String> data = new KeyedMessage<String, String>("histticks", record.values.toString())
+                        KeyedMessage<String, String> data = new KeyedMessage<String, String>("histticks", record.values[0].toString())
 
                         // Send the message
-                        producer.send(record.values.toString())
+                        producer.send(record.values[0].toString())
 
                         processedRecords++
 
