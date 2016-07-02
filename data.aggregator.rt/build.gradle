@@ -35,15 +35,15 @@ dependencies {
     compile 'org.slf4j:slf4j-nop:1.7.21'
     compile 'org.apache.commons:commons-csv:1.4'
 
-    compile 'org.apache.kafka:kafka_2.11:0.10.0.0'
+    compile 'org.apache.kafka:kafka-clients:0.10.0.0'
+    compile 'org.apache.kafka:kafka-streams:0.10.0.0'
 
     testCompile 'junit:junit:4.12'
 }
 
 shadowJar {
     manifest {
-        attributes 'Main-Class': 'com.fcnlabs.oanda.PublishTickStream'
-        attributes 'Class-Path': 'com/fcnlabs/oanda libs/ lib/'
+        attributes 'Main-Class': 'com.fcnlabs.persist.PersistTickStream'
+        attributes 'Class-Path': 'com/fcnlabs/persist libs/ lib/'
     }
 }
-
