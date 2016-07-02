@@ -1,13 +1,15 @@
 package com.fcnlabs.hist
 
-import org.apache.commons.csv.CSVParser
+import kafka.javaapi.producer.Producer
+import kafka.producer.KeyedMessage
+import kafka.producer.ProducerConfig
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
 
 import java.nio.file.Paths
 import java.time.LocalDateTime
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
-
-import static org.apache.commons.csv.CSVFormat.*
 
 class PublishHistTicks {
 

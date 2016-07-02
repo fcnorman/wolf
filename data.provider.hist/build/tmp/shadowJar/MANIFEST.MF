@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.fcnlabs.hist.PublishHistTicks
+Class-Path: com/fcnlabs/hist libs/ lib/
+
