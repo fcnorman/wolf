@@ -1,8 +1,13 @@
 package com.fcnlabs.hist
 
 import com.datastax.driver.core.LocalDate
-
-import static org.apache.commons.csv.CSVFormat.*
+import com.datastax.driver.core.exceptions.*
+import com.fcnlabs.persist.CassandraConnector
+import org.apache.kafka.clients.consumer.ConsumerRecord
+import org.apache.kafka.clients.consumer.ConsumerRecords
+import org.apache.kafka.clients.consumer.KafkaConsumer
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
 
 class PersistHistTicks {
 
@@ -13,10 +18,10 @@ class PersistHistTicks {
         // declare variables
         def env = System.getenv()
         String cassandra_host = env['CQLSH_HOST']
-        String histdata_dir = env['HISTDATA_DIR']
+        String kafka_host = env['KAFKA_HOST']
 
         // Configure Cassandra Connection
-        final CassandraConnector client = new CassandraConnector();
+        final CassandraConnector client = new CassandraConnector()
         final String ipAddress = cassandra_host;
         final int port = args.length > 1 ? Integer.parseInt(args[1]) : 9042;
         log.info("Connecting to IP Address " + ipAddress + ":" + port + "...");
@@ -31,7 +36,7 @@ class PersistHistTicks {
 
         // Configure Kafka Connection
         Properties props = new Properties()
-        props.put("bootstrap.servers", kafka_host + ":9092")
+        props.put("bootstrap.servers", kafka_host + ":" + port.toString())
         props.put("group.id", "persist.hist.stream")
         props.put("enable.auto.commit", "true")
         props.put("auto.commit.interval.ms", "1000")

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data.aggregator.rt.iml" filepath="$PROJECT_DIR$/.idea/modules/data.aggregator.rt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data.aggregator.rt_main.iml" filepath="$PROJECT_DIR$/.idea/modules/data.aggregator.rt_main.iml" group="data.aggregator.rt" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data.aggregator.rt_test.iml" filepath="$PROJECT_DIR$/.idea/modules/data.aggregator.rt_test.iml" group="data.aggregator.rt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data.persist.hist.iml" filepath="$PROJECT_DIR$/.idea/modules/data.persist.hist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data.persist.hist_main.iml" filepath="$PROJECT_DIR$/.idea/modules/data.persist.hist_main.iml" group="data.persist.hist" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data.persist.hist_test.iml" filepath="$PROJECT_DIR$/.idea/modules/data.persist.hist_test.iml" group="data.persist.hist" />
     </modules>
   </component>
 </project>
