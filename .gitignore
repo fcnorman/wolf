@@ -1,5 +1,9 @@
 
 .idea/
+*.log
+run.sh
+*.class
+*.csv
 data.router/bin/kafka_2.9.2-0.8.1.1.*
 data.router/bin/kafka_2.9.2-0.8.1.1/
 data.router/bin/kafka_2.9.2-0.8.1.1/**

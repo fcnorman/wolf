@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/home/fcndev/projects/wolf/data.provider/src/2.provider.py", line 29, in <module>
-    kafka = KafkaClient(kafka_host + ":" + kafka_port)
-TypeError: __init__() takes exactly 1 argument (2 given)
