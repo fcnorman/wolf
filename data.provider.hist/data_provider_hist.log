@@ -650,3 +650,147 @@
 [INFO ] 2016-07-02 20:44:47.621 [main] PublishHistTicks - Interval time: Sat Jul 02 20:44:47 EDT 2016 Transactions Per Minute: 0.0021697747
 [INFO ] 2016-07-02 20:44:49.557 [main] PublishHistTicks - 80.0% records processed.  1408990 / 1761237
 [INFO ] 2016-07-02 20:44:49.557 [main] PublishHistTicks - Interval time: Sat Jul 02 20:44:49 EDT 2016 Transactions Per Minute: 0.0020586628
+[INFO ] 2016-07-02 20:44:51.612 [main] PublishHistTicks - 89.99999999999999% records processed.  1585114 / 1761237
+[INFO ] 2016-07-02 20:44:51.612 [main] PublishHistTicks - Interval time: Sat Jul 02 20:44:51 EDT 2016 Transactions Per Minute: 0.0019624548
+[INFO ] 2016-07-02 20:44:53.025 [main] PublishHistTicks - 99.99999999999999% records processed.  1761237 / 1761237
+[INFO ] 2016-07-02 20:44:53.025 [main] PublishHistTicks - Interval time: Sat Jul 02 20:44:53 EDT 2016 Transactions Per Minute: 0.0019733748
+[INFO ] 2016-07-02 20:44:53.025 [main] PublishHistTicks - Stop time: Sat Jul 02 20:44:53 EDT 2016 Transactions Per Minute: 0.0019733748
+[INFO ] 2016-07-02 20:44:53.025 [main] PublishHistTicks - Processing /home/ubuntu/projects/wolf/histdata.com/data/csv/DAT_ASCII_EURUSD_T_201601.csv
+[INFO ] 2016-07-02 20:44:53.371 [main] PublishHistTicks - Start time: Sat Jul 02 20:44:53 EDT 2016
+[INFO ] 2016-07-02 20:44:55.016 [main] PublishHistTicks - 10.0% records processed.  208169 / 2081682
+[INFO ] 2016-07-02 20:44:55.017 [main] PublishHistTicks - Interval time: Sat Jul 02 20:44:55 EDT 2016 Transactions Per Minute: 0.0021078271
+[INFO ] 2016-07-02 20:44:56.627 [main] PublishHistTicks - 20.0% records processed.  416337 / 2081682
+[INFO ] 2016-07-02 20:44:56.627 [main] PublishHistTicks - Interval time: Sat Jul 02 20:44:56 EDT 2016 Transactions Per Minute: 0.0021311271
+[INFO ] 2016-07-02 20:44:58.202 [main] PublishHistTicks - 30.000000000000004% records processed.  624505 / 2081682
+[INFO ] 2016-07-02 20:44:58.202 [main] PublishHistTicks - Interval time: Sat Jul 02 20:44:58 EDT 2016 Transactions Per Minute: 0.0021545056
+[INFO ] 2016-07-02 20:44:59.796 [main] PublishHistTicks - 40.0% records processed.  832673 / 2081682
+[INFO ] 2016-07-02 20:44:59.796 [main] PublishHistTicks - Interval time: Sat Jul 02 20:44:59 EDT 2016 Transactions Per Minute: 0.0021599818
+[INFO ] 2016-07-02 20:45:01.408 [main] PublishHistTicks - 50.0% records processed.  1040842 / 2081682
+[INFO ] 2016-07-02 20:45:01.408 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:01 EDT 2016 Transactions Per Minute: 0.0021584381
+[INFO ] 2016-07-02 20:45:03.037 [main] PublishHistTicks - 60.0% records processed.  1249010 / 2081682
+[INFO ] 2016-07-02 20:45:03.037 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:03 EDT 2016 Transactions Per Minute: 0.0021536140
+[INFO ] 2016-07-02 20:45:04.643 [main] PublishHistTicks - 70.0% records processed.  1457178 / 2081682
+[INFO ] 2016-07-02 20:45:04.643 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:04 EDT 2016 Transactions Per Minute: 0.0021545688
+[INFO ] 2016-07-02 20:45:06.248 [main] PublishHistTicks - 80.0% records processed.  1665346 / 2081682
+[INFO ] 2016-07-02 20:45:06.249 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:06 EDT 2016 Transactions Per Minute: 0.0021554529
+[INFO ] 2016-07-02 20:45:07.885 [main] PublishHistTicks - 89.99999999999999% records processed.  1873514 / 2081682
+[INFO ] 2016-07-02 20:45:07.886 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:07 EDT 2016 Transactions Per Minute: 0.0021512389
+[INFO ] 2016-07-02 20:45:09.820 [main] PublishHistTicks - 99.99999999999999% records processed.  2081682 / 2081682
+[INFO ] 2016-07-02 20:45:09.821 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:09 EDT 2016 Transactions Per Minute: 0.0021092285
+[INFO ] 2016-07-02 20:45:09.821 [main] PublishHistTicks - Stop time: Sat Jul 02 20:45:09 EDT 2016 Transactions Per Minute: 0.0021091003
+[INFO ] 2016-07-02 20:45:09.821 [main] PublishHistTicks - Processing /home/ubuntu/projects/wolf/histdata.com/data/csv/DAT_ASCII_EURUSD_T_201602.csv
+[INFO ] 2016-07-02 20:45:10.282 [main] PublishHistTicks - Start time: Sat Jul 02 20:45:10 EDT 2016
+[INFO ] 2016-07-02 20:45:12.364 [main] PublishHistTicks - 10.0% records processed.  233664 / 2336630
+[INFO ] 2016-07-02 20:45:12.364 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:12 EDT 2016 Transactions Per Minute: 0.0018705091
+[INFO ] 2016-07-02 20:45:14.171 [main] PublishHistTicks - 20.0% records processed.  467327 / 2336630
+[INFO ] 2016-07-02 20:45:14.171 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:14 EDT 2016 Transactions Per Minute: 0.0020027728
+[INFO ] 2016-07-02 20:45:16.014 [main] PublishHistTicks - 30.000000000000004% records processed.  700990 / 2336630
+[INFO ] 2016-07-02 20:45:16.014 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:16 EDT 2016 Transactions Per Minute: 0.0020382356
+[INFO ] 2016-07-02 20:45:17.806 [main] PublishHistTicks - 40.0% records processed.  934653 / 2336630
+[INFO ] 2016-07-02 20:45:17.806 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:17 EDT 2016 Transactions Per Minute: 0.0020703814
+[INFO ] 2016-07-02 20:45:19.559 [main] PublishHistTicks - 50.0% records processed.  1168316 / 2336630
+[INFO ] 2016-07-02 20:45:19.559 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:19 EDT 2016 Transactions Per Minute: 0.0020989472
+[INFO ] 2016-07-02 20:45:21.454 [main] PublishHistTicks - 60.0% records processed.  1401979 / 2336630
+[INFO ] 2016-07-02 20:45:21.454 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:21 EDT 2016 Transactions Per Minute: 0.0020915070
+[INFO ] 2016-07-02 20:45:23.293 [main] PublishHistTicks - 70.0% records processed.  1635642 / 2336630
+[INFO ] 2016-07-02 20:45:23.294 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:23 EDT 2016 Transactions Per Minute: 0.0020952041
+[INFO ] 2016-07-02 20:45:25.173 [main] PublishHistTicks - 80.0% records processed.  1869304 / 2336630
+[INFO ] 2016-07-02 20:45:25.173 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:25 EDT 2016 Transactions Per Minute: 0.0020922078
+[INFO ] 2016-07-02 20:45:26.993 [main] PublishHistTicks - 89.99999999999999% records processed.  2102967 / 2336630
+[INFO ] 2016-07-02 20:45:26.993 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:26 EDT 2016 Transactions Per Minute: 0.0020973879
+[INFO ] 2016-07-02 20:45:28.859 [main] PublishHistTicks - 99.99999999999999% records processed.  2336630 / 2336630
+[INFO ] 2016-07-02 20:45:28.860 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:28 EDT 2016 Transactions Per Minute: 0.0020963467
+[INFO ] 2016-07-02 20:45:28.860 [main] PublishHistTicks - Stop time: Sat Jul 02 20:45:28 EDT 2016 Transactions Per Minute: 0.0020962339
+[INFO ] 2016-07-02 20:45:28.860 [main] PublishHistTicks - Processing /home/ubuntu/projects/wolf/histdata.com/data/csv/DAT_ASCII_EURUSD_T_201603.csv
+[INFO ] 2016-07-02 20:45:29.187 [main] PublishHistTicks - Start time: Sat Jul 02 20:45:29 EDT 2016
+[INFO ] 2016-07-02 20:45:30.747 [main] PublishHistTicks - 10.0% records processed.  197925 / 1979243
+[INFO ] 2016-07-02 20:45:30.747 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:30 EDT 2016 Transactions Per Minute: 0.0021145833
+[INFO ] 2016-07-02 20:45:32.286 [main] PublishHistTicks - 20.0% records processed.  395849 / 1979243
+[INFO ] 2016-07-02 20:45:32.286 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:32 EDT 2016 Transactions Per Minute: 0.0021289072
+[INFO ] 2016-07-02 20:45:33.860 [main] PublishHistTicks - 30.000000000000004% records processed.  593773 / 1979243
+[INFO ] 2016-07-02 20:45:33.860 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:33 EDT 2016 Transactions Per Minute: 0.0021177438
+[INFO ] 2016-07-02 20:45:35.389 [main] PublishHistTicks - 40.0% records processed.  791698 / 1979243
+[INFO ] 2016-07-02 20:45:35.389 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:35 EDT 2016 Transactions Per Minute: 0.0021275341
+[INFO ] 2016-07-02 20:45:36.948 [main] PublishHistTicks - 50.0% records processed.  989622 / 1979243
+[INFO ] 2016-07-02 20:45:36.949 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:36 EDT 2016 Transactions Per Minute: 0.0021249291
+[INFO ] 2016-07-02 20:45:38.501 [main] PublishHistTicks - 60.0% records processed.  1187546 / 1979243
+[INFO ] 2016-07-02 20:45:38.501 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:38 EDT 2016 Transactions Per Minute: 0.0021250197
+[INFO ] 2016-07-02 20:45:40.042 [main] PublishHistTicks - 70.0% records processed.  1385471 / 1979243
+[INFO ] 2016-07-02 20:45:40.042 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:40 EDT 2016 Transactions Per Minute: 0.0021272394
+[INFO ] 2016-07-02 20:45:41.598 [main] PublishHistTicks - 80.0% records processed.  1583395 / 1979243
+[INFO ] 2016-07-02 20:45:41.599 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:41 EDT 2016 Transactions Per Minute: 0.0021261615
+[INFO ] 2016-07-02 20:45:43.151 [main] PublishHistTicks - 89.99999999999999% records processed.  1781319 / 1979243
+[INFO ] 2016-07-02 20:45:43.151 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:43 EDT 2016 Transactions Per Minute: 0.0021260849
+[INFO ] 2016-07-02 20:45:44.702 [main] PublishHistTicks - 99.99999999999999% records processed.  1979243 / 1979243
+[INFO ] 2016-07-02 20:45:44.702 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:44 EDT 2016 Transactions Per Minute: 0.0021261607
+[INFO ] 2016-07-02 20:45:44.702 [main] PublishHistTicks - Stop time: Sat Jul 02 20:45:44 EDT 2016 Transactions Per Minute: 0.0021261607
+[INFO ] 2016-07-02 20:45:44.702 [main] PublishHistTicks - Processing /home/ubuntu/projects/wolf/histdata.com/data/csv/DAT_ASCII_EURUSD_T_201604.csv
+[INFO ] 2016-07-02 20:45:45.005 [main] PublishHistTicks - Start time: Sat Jul 02 20:45:45 EDT 2016
+[INFO ] 2016-07-02 20:45:46.351 [main] PublishHistTicks - 10.0% records processed.  182707 / 1827066
+[INFO ] 2016-07-02 20:45:46.351 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:46 EDT 2016 Transactions Per Minute: 0.0022623452
+[INFO ] 2016-07-02 20:45:47.713 [main] PublishHistTicks - 20.0% records processed.  365414 / 1827066
+[INFO ] 2016-07-02 20:45:47.714 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:47 EDT 2016 Transactions Per Minute: 0.0022489783
+[INFO ] 2016-07-02 20:45:49.185 [main] PublishHistTicks - 30.000000000000004% records processed.  548120 / 1827066
+[INFO ] 2016-07-02 20:45:49.185 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:49 EDT 2016 Transactions Per Minute: 0.0021854864
+[INFO ] 2016-07-02 20:45:50.620 [main] PublishHistTicks - 40.0% records processed.  730827 / 1827066
+[INFO ] 2016-07-02 20:45:50.621 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:50 EDT 2016 Transactions Per Minute: 0.0021688835
+[INFO ] 2016-07-02 20:45:52.036 [main] PublishHistTicks - 50.0% records processed.  913534 / 1827066
+[INFO ] 2016-07-02 20:45:52.036 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:52 EDT 2016 Transactions Per Minute: 0.0021654909
+[INFO ] 2016-07-02 20:45:53.480 [main] PublishHistTicks - 60.0% records processed.  1096240 / 1827066
+[INFO ] 2016-07-02 20:45:53.480 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:53 EDT 2016 Transactions Per Minute: 0.0021558309
+[INFO ] 2016-07-02 20:45:54.865 [main] PublishHistTicks - 70.0% records processed.  1278947 / 1827066
+[INFO ] 2016-07-02 20:45:54.865 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:54 EDT 2016 Transactions Per Minute: 0.0021618442
+[INFO ] 2016-07-02 20:45:56.325 [main] PublishHistTicks - 80.0% records processed.  1461653 / 1827066
+[INFO ] 2016-07-02 20:45:56.325 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:56 EDT 2016 Transactions Per Minute: 0.0021520215
+[INFO ] 2016-07-02 20:45:57.760 [main] PublishHistTicks - 89.99999999999999% records processed.  1644360 / 1827066
+[INFO ] 2016-07-02 20:45:57.760 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:57 EDT 2016 Transactions Per Minute: 0.0021486476
+[INFO ] 2016-07-02 20:45:59.192 [main] PublishHistTicks - 99.99999999999999% records processed.  1827066 / 1827066
+[INFO ] 2016-07-02 20:45:59.193 [main] PublishHistTicks - Interval time: Sat Jul 02 20:45:59 EDT 2016 Transactions Per Minute: 0.0021462574
+[INFO ] 2016-07-02 20:45:59.193 [main] PublishHistTicks - Stop time: Sat Jul 02 20:45:59 EDT 2016 Transactions Per Minute: 0.0021462574
+[INFO ] 2016-07-02 20:45:59.193 [main] PublishHistTicks - Processing /home/ubuntu/projects/wolf/histdata.com/data/csv/DAT_ASCII_EURUSD_T_201605.csv
+[INFO ] 2016-07-02 20:45:59.482 [main] PublishHistTicks - Start time: Sat Jul 02 20:45:59 EDT 2016
+[INFO ] 2016-07-02 20:46:00.866 [main] PublishHistTicks - 10.0% records processed.  167732 / 1677316
+[INFO ] 2016-07-02 20:46:00.867 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:00 EDT 2016 Transactions Per Minute: 0.0020169793
+[INFO ] 2016-07-02 20:46:02.154 [main] PublishHistTicks - 20.0% records processed.  335464 / 1677316
+[INFO ] 2016-07-02 20:46:02.154 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:02 EDT 2016 Transactions Per Minute: 0.0020916823
+[INFO ] 2016-07-02 20:46:03.482 [main] PublishHistTicks - 30.000000000000004% records processed.  503195 / 1677316
+[INFO ] 2016-07-02 20:46:03.482 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:03 EDT 2016 Transactions Per Minute: 0.0020961218
+[INFO ] 2016-07-02 20:46:04.743 [main] PublishHistTicks - 40.0% records processed.  670927 / 1677316
+[INFO ] 2016-07-02 20:46:04.743 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:04 EDT 2016 Transactions Per Minute: 0.0021250697
+[INFO ] 2016-07-02 20:46:05.988 [main] PublishHistTicks - 50.0% records processed.  838659 / 1677316
+[INFO ] 2016-07-02 20:46:05.988 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:05 EDT 2016 Transactions Per Minute: 0.0021480944
+[INFO ] 2016-07-02 20:46:07.274 [main] PublishHistTicks - 60.0% records processed.  1006390 / 1677316
+[INFO ] 2016-07-02 20:46:07.274 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:07 EDT 2016 Transactions Per Minute: 0.0021523376
+[INFO ] 2016-07-02 20:46:08.613 [main] PublishHistTicks - 70.0% records processed.  1174122 / 1677316
+[INFO ] 2016-07-02 20:46:08.613 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:08 EDT 2016 Transactions Per Minute: 0.0021428712
+[INFO ] 2016-07-02 20:46:09.937 [main] PublishHistTicks - 80.0% records processed.  1341853 / 1677316
+[INFO ] 2016-07-02 20:46:09.938 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:09 EDT 2016 Transactions Per Minute: 0.0021388884
+[INFO ] 2016-07-02 20:46:11.257 [main] PublishHistTicks - 89.99999999999999% records processed.  1509585 / 1677316
+[INFO ] 2016-07-02 20:46:11.257 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:11 EDT 2016 Transactions Per Minute: 0.0021365277
+[INFO ] 2016-07-02 20:46:12.563 [main] PublishHistTicks - 99.99999999999999% records processed.  1677316 / 1677316
+[INFO ] 2016-07-02 20:46:12.564 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:12 EDT 2016 Transactions Per Minute: 0.0021367627
+[INFO ] 2016-07-02 20:46:12.564 [main] PublishHistTicks - Stop time: Sat Jul 02 20:46:12 EDT 2016 Transactions Per Minute: 0.0021367627
+[INFO ] 2016-07-02 20:46:12.564 [main] PublishHistTicks - Processing /home/ubuntu/projects/wolf/histdata.com/data/csv/DAT_ASCII_EURUSD_T_201606.csv
+[INFO ] 2016-07-02 20:46:12.604 [main] PublishHistTicks - Start time: Sat Jul 02 20:46:12 EDT 2016
+[INFO ] 2016-07-02 20:46:12.777 [main] PublishHistTicks - 10.0% records processed.  23216 / 232154
+[INFO ] 2016-07-02 20:46:12.777 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:12 EDT 2016 Transactions Per Minute: 0.0022366089
+[INFO ] 2016-07-02 20:46:12.962 [main] PublishHistTicks - 20.0% records processed.  46431 / 232154
+[INFO ] 2016-07-02 20:46:12.962 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:12 EDT 2016 Transactions Per Minute: 0.0021615922
+[INFO ] 2016-07-02 20:46:13.148 [main] PublishHistTicks - 30.000000000000004% records processed.  69647 / 232154
+[INFO ] 2016-07-02 20:46:13.148 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:13 EDT 2016 Transactions Per Minute: 0.0021337929
+[INFO ] 2016-07-02 20:46:13.318 [main] PublishHistTicks - 40.0% records processed.  92862 / 232154
+[INFO ] 2016-07-02 20:46:13.318 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:13 EDT 2016 Transactions Per Minute: 0.0021676471
+[INFO ] 2016-07-02 20:46:13.490 [main] PublishHistTicks - 50.0% records processed.  116078 / 232154
+[INFO ] 2016-07-02 20:46:13.490 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:13 EDT 2016 Transactions Per Minute: 0.0021835591
+[INFO ] 2016-07-02 20:46:13.663 [main] PublishHistTicks - 60.0% records processed.  139293 / 232154
+[INFO ] 2016-07-02 20:46:13.663 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:13 EDT 2016 Transactions Per Minute: 0.0021922096
+[INFO ] 2016-07-02 20:46:13.839 [main] PublishHistTicks - 70.0% records processed.  162508 / 232154
+[INFO ] 2016-07-02 20:46:13.840 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:13 EDT 2016 Transactions Per Minute: 0.0021930904
+[INFO ] 2016-07-02 20:46:14.024 [main] PublishHistTicks - 80.0% records processed.  185724 / 232154
+[INFO ] 2016-07-02 20:46:14.024 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:14 EDT 2016 Transactions Per Minute: 0.0021798592
+[INFO ] 2016-07-02 20:46:14.201 [main] PublishHistTicks - 89.99999999999999% records processed.  208939 / 232154
+[INFO ] 2016-07-02 20:46:14.201 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:14 EDT 2016 Transactions Per Minute: 0.0021805364
+[INFO ] 2016-07-02 20:46:14.390 [main] PublishHistTicks - 99.99999999999999% records processed.  232154 / 232154
+[INFO ] 2016-07-02 20:46:14.390 [main] PublishHistTicks - Interval time: Sat Jul 02 20:46:14 EDT 2016 Transactions Per Minute: 0.0021664240
+[INFO ] 2016-07-02 20:46:14.390 [main] PublishHistTicks - Stop time: Sat Jul 02 20:46:14 EDT 2016 Transactions Per Minute: 0.0021664240
+[INFO ] 2016-07-02 20:46:14.390 [main] PublishHistTicks - Processing /home/ubuntu/projects/wolf/histdata.com/data/csv/DAT_ASCII_EURUSD_T_201607.csv
