@@ -22,11 +22,11 @@
 /data.provider.oanda/.gradle/
 /data.provider.oanda/.gradle/**
 /data.provider.oanda/*.log
-/data.provider.hist/.gradle/
-/data.provider.hist/.gradle/**
-/data.provider.hist/build/
-/data.provider.hist/build/**
-/data.provider.hist/*.log
+./data.provider.hist/.gradle/
+./data.provider.hist/.gradle/**
+./data.provider.hist/build/
+./data.provider.hist/build/**
+./data.provider.hist/*.log
 /rule.engine/.idea/
 /rule.engine/.idea/**
 /rule.engine/.gradle/
