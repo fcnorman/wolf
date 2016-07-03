@@ -1,8 +1,8 @@
 package com.fcnlabs.hist
 
-import kafka.javaapi.producer.Producer
-import kafka.producer.KeyedMessage
-import kafka.producer.ProducerConfig
+import org.apache.kafka.clients.producer.KafkaProducer
+import org.apache.kafka.clients.producer.Producer
+import org.apache.kafka.clients.producer.ProducerRecord
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 
@@ -20,24 +20,17 @@ class PublishHistTicks {
         final int port = args.length > 1 ? Integer.parseInt(args[1]) : 9092
         log.info("Connecting to Kafka Broker at IP Address " + ipAddress + ":" + port + "...")
 
-        Properties props = new Properties()
+        Properties props = new Properties();
+        props.put("bootstrap.servers", kafka_host + ":" + port.toString())
+        props.put("acks", "all")
+        props.put("retries", 0)
+        props.put("batch.size", 16384)
+        props.put("linger.ms", 1)
+        props.put("buffer.memory", 33554432)
+        props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
+        props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
 
-        //List of Kafka brokers. Complete list of brokers is not
-        //required as the producer will auto discover the rest of
-        //the brokers. Change this to suit your deployment
-
-        //  DOCKER_HOST : 49092->9092
-        props.put("metadata.broker.list", kafka_host + ":" + port.toString())
-
-        // Serializer used for sending data to kafka. Since we are sending string,
-        // we are using StringEncoder.
-        props.put("serializer.class", "kafka.serializer.StringEncoder")
-
-        // We want acks from Kafka that messages are properly received.
-        props.put("request.required.acks", "1")
-
-        ProducerConfig config = new ProducerConfig(props)
-        Producer<String, String> producer = new Producer<String, String>(config)
+        Producer<String, String> producer = new KafkaProducer<>(props)
 
         int i, j
         String jj
@@ -70,10 +63,10 @@ class PublishHistTicks {
                     log.info("Start time: " + new Date().toString())
 
                     // Create message to be sent to "tick_topic" topic with the tick
-                    KeyedMessage<String, String> data = new KeyedMessage<String, String>("histticks", line)
+                    ProducerRecord<String, String> data = new ProducerRecord<String, String>("histticks", line)
 
                     // Send the message
-                    producer.send(line)
+                    producer.send(data)
 
                     processedRecords++
 
