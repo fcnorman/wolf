@@ -1,6 +1,9 @@
 .idea/
 */.idea/
 **/.idea/
+.gradle/
+*/.gradle/
+**/.gradle/
 *.log
 run.sh
 *.class
