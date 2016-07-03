@@ -58,9 +58,8 @@ class PublishHistTicks {
                 Integer processedRecords = 0
                 Double tickler = 0.10
                 Date startTime = new Date()
+                log.info("Start time: " + new Date().toString())
                 fileSecondPass.eachLine { line ->
-
-                    log.info("Start time: " + new Date().toString())
 
                     // Create message to be sent to "tick_topic" topic with the tick
                     ProducerRecord<String, String> data = new ProducerRecord<String, String>("histticks", line)
