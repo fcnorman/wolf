@@ -4,6 +4,9 @@
 .gradle/
 */.gradle/
 **/.gradle/
+build/
+*/build/
+**/build/
 *.log
 run.sh
 *.class
