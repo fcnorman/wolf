@@ -2,7 +2,6 @@ package com.fcnlabs.persist
 
 import com.datastax.driver.core.LocalDate
 import com.datastax.driver.core.exceptions.*
-import com.fcnlabs.persist.CassandraConnector
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.kafka.clients.consumer.ConsumerRecords
 import org.apache.kafka.clients.consumer.KafkaConsumer

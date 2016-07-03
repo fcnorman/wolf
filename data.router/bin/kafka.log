@@ -1,0 +1,291 @@
+[2016-07-02 16:07:09,475] INFO KafkaConfig values: 
+	advertised.host.name = null
+	metric.reporters = []
+	quota.producer.default = 9223372036854775807
+	offsets.topic.num.partitions = 50
+	log.flush.interval.messages = 9223372036854775807
+	auto.create.topics.enable = true
+	controller.socket.timeout.ms = 30000
+	log.flush.interval.ms = null
+	principal.builder.class = class org.apache.kafka.common.security.auth.DefaultPrincipalBuilder
+	replica.socket.receive.buffer.bytes = 65536
+	min.insync.replicas = 1
+	replica.fetch.wait.max.ms = 500
+	num.recovery.threads.per.data.dir = 1
+	ssl.keystore.type = JKS
+	sasl.mechanism.inter.broker.protocol = GSSAPI
+	default.replication.factor = 1
+	ssl.truststore.password = null
+	log.preallocate = false
+	sasl.kerberos.principal.to.local.rules = [DEFAULT]
+	fetch.purgatory.purge.interval.requests = 1000
+	ssl.endpoint.identification.algorithm = null
+	replica.socket.timeout.ms = 30000
+	message.max.bytes = 1000012
+	num.io.threads = 8
+	offsets.commit.required.acks = -1
+	log.flush.offset.checkpoint.interval.ms = 60000
+	delete.topic.enable = false
+	quota.window.size.seconds = 1
+	ssl.truststore.type = JKS
+	offsets.commit.timeout.ms = 5000
+	quota.window.num = 11
+	zookeeper.connect = localhost:2181
+	authorizer.class.name = 
+	num.replica.fetchers = 1
+	log.retention.ms = null
+	log.roll.jitter.hours = 0
+	log.cleaner.enable = true
+	offsets.load.buffer.size = 5242880
+	log.cleaner.delete.retention.ms = 86400000
+	ssl.client.auth = none
+	controlled.shutdown.max.retries = 3
+	queued.max.requests = 500
+	offsets.topic.replication.factor = 3
+	log.cleaner.threads = 1
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	socket.request.max.bytes = 104857600
+	ssl.trustmanager.algorithm = PKIX
+	zookeeper.session.timeout.ms = 6000
+	log.retention.bytes = -1
+	log.message.timestamp.type = CreateTime
+	sasl.kerberos.min.time.before.relogin = 60000
+	zookeeper.set.acl = false
+	connections.max.idle.ms = 600000
+	offsets.retention.minutes = 1440
+	replica.fetch.backoff.ms = 1000
+	inter.broker.protocol.version = 0.10.0-IV1
+	log.retention.hours = 168
+	num.partitions = 1
+	broker.id.generation.enable = true
+	listeners = PLAINTEXT://localhost:9092
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	log.roll.ms = null
+	log.flush.scheduler.interval.ms = 9223372036854775807
+	ssl.cipher.suites = null
+	log.index.size.max.bytes = 10485760
+	ssl.keymanager.algorithm = SunX509
+	security.inter.broker.protocol = PLAINTEXT
+	replica.fetch.max.bytes = 1048576
+	advertised.port = null
+	log.cleaner.dedupe.buffer.size = 134217728
+	replica.high.watermark.checkpoint.interval.ms = 5000
+	log.cleaner.io.buffer.size = 524288
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	zookeeper.connection.timeout.ms = 6000
+	controlled.shutdown.retry.backoff.ms = 5000
+	log.roll.hours = 168
+	log.cleanup.policy = delete
+	host.name = 
+	log.roll.jitter.ms = null
+	max.connections.per.ip = 2147483647
+	offsets.topic.segment.bytes = 104857600
+	background.threads = 10
+	quota.consumer.default = 9223372036854775807
+	request.timeout.ms = 30000
+	log.message.format.version = 0.10.0-IV1
+	log.index.interval.bytes = 4096
+	log.dir = /tmp/kafka-logs
+	log.segment.bytes = 1073741824
+	log.cleaner.backoff.ms = 15000
+	offset.metadata.max.bytes = 4096
+	ssl.truststore.location = null
+	group.max.session.timeout.ms = 300000
+	ssl.keystore.password = null
+	zookeeper.sync.time.ms = 2000
+	port = 9092
+	log.retention.minutes = null
+	log.segment.delete.delay.ms = 60000
+	log.dirs = /tmp/kafka-logs
+	controlled.shutdown.enable = true
+	compression.type = producer
+	max.connections.per.ip.overrides = 
+	log.message.timestamp.difference.max.ms = 9223372036854775807
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	log.cleaner.io.max.bytes.per.second = 1.7976931348623157E308
+	auto.leader.rebalance.enable = true
+	leader.imbalance.check.interval.seconds = 300
+	log.cleaner.min.cleanable.ratio = 0.5
+	replica.lag.time.max.ms = 10000
+	num.network.threads = 3
+	ssl.key.password = null
+	reserved.broker.max.id = 1000
+	metrics.num.samples = 2
+	socket.send.buffer.bytes = 102400
+	ssl.protocol = TLS
+	socket.receive.buffer.bytes = 102400
+	ssl.keystore.location = null
+	replica.fetch.min.bytes = 1
+	broker.rack = null
+	unclean.leader.election.enable = true
+	sasl.enabled.mechanisms = [GSSAPI]
+	group.min.session.timeout.ms = 6000
+	log.cleaner.io.buffer.load.factor = 0.9
+	offsets.retention.check.interval.ms = 600000
+	producer.purgatory.purge.interval.requests = 1000
+	metrics.sample.window.ms = 30000
+	broker.id = 0
+	offsets.topic.compression.codec = 0
+	log.retention.check.interval.ms = 300000
+	advertised.listeners = PLAINTEXT://localhost:9092
+	leader.imbalance.per.broker.percentage = 10
+ (kafka.server.KafkaConfig)
+[2016-07-02 16:07:09,629] INFO starting (kafka.server.KafkaServer)
+[2016-07-02 16:07:09,648] INFO Connecting to zookeeper on localhost:2181 (kafka.server.KafkaServer)
+[2016-07-02 16:07:09,657] INFO Starting ZkClient event thread. (org.I0Itec.zkclient.ZkEventThread)
+[2016-07-02 16:07:09,667] INFO Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,667] INFO Client environment:host.name=fcndev-3570R-370R-470R-450R-510R-4450RV (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,667] INFO Client environment:java.version=1.8.0_91 (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,667] INFO Client environment:java.vendor=Oracle Corporation (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,667] INFO Client environment:java.home=/usr/lib/jvm/java-8-oracle/jre (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,667] INFO Client environment:java.class.path=:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/aopalliance-repackaged-2.4.0-b34.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/argparse4j-0.5.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/connect-api-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/connect-file-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/connect-json-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/connect-runtime-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/guava-18.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/hk2-api-2.4.0-b34.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/hk2-locator-2.4.0-b34.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/hk2-utils-2.4.0-b34.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jackson-annotations-2.6.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jackson-core-2.6.3.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jackson-databind-2.6.3.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jackson-jaxrs-base-2.6.3.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jackson-jaxrs-json-provider-2.6.3.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jackson-module-jaxb-annotations-2.6.3.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/javassist-3.18.2-GA.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/javax.annotation-api-1.2.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/javax.inject-1.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/javax.inject-2.4.0-b34.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/javax.ws.rs-api-2.0.1.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jersey-client-2.22.2.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jersey-common-2.22.2.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jersey-container-servlet-2.22.2.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jersey-container-servlet-core-2.22.2.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jersey-guava-2.22.2.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jersey-media-jaxb-2.22.2.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jersey-server-2.22.2.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jetty-continuation-9.2.15.v20160210.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jetty-http-9.2.15.v20160210.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jetty-io-9.2.15.v20160210.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jetty-security-9.2.15.v20160210.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jetty-server-9.2.15.v20160210.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jetty-servlet-9.2.15.v20160210.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jetty-servlets-9.2.15.v20160210.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jetty-util-9.2.15.v20160210.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/jopt-simple-4.9.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/kafka_2.11-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/kafka_2.11-0.10.0.0-sources.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/kafka_2.11-0.10.0.0-test-sources.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/kafka-clients-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/kafka-log4j-appender-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/kafka-streams-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/kafka-streams-examples-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/kafka-tools-0.10.0.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/log4j-1.2.17.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/lz4-1.3.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/metrics-core-2.2.0.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/osgi-resource-locator-1.0.1.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/reflections-0.9.10.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/rocksdbjni-4.4.1.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/scala-library-2.11.8.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/scala-parser-combinators_2.11-1.0.4.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/slf4j-api-1.7.21.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/slf4j-log4j12-1.7.21.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/snappy-java-1.1.2.4.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/validation-api-1.1.0.Final.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/zkclient-0.8.jar:/home/fcndev/projects/wolf/data.router/bin/kafka_2.11-0.10.0.0/bin/../libs/zookeeper-3.4.6.jar (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:java.library.path=/usr/java/packages/lib/i386:/lib:/usr/lib (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:java.io.tmpdir=/tmp (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:java.compiler=<NA> (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:os.name=Linux (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:os.arch=i386 (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:os.version=4.4.0-28-generic (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:user.name=fcndev (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:user.home=/home/fcndev (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,668] INFO Client environment:user.dir=/home/fcndev/projects/wolf/data.router/bin (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,669] INFO Initiating client connection, connectString=localhost:2181 sessionTimeout=6000 watcher=org.I0Itec.zkclient.ZkClient@1a9ad43 (org.apache.zookeeper.ZooKeeper)
+[2016-07-02 16:07:09,680] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2016-07-02 16:07:09,684] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 16:07:09,740] INFO Socket connection established to localhost/127.0.0.1:2181, initiating session (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 16:07:09,889] INFO Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x155ad38809e0000, negotiated timeout = 6000 (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 16:07:09,891] INFO zookeeper state changed (SyncConnected) (org.I0Itec.zkclient.ZkClient)
+[2016-07-02 16:07:10,164] INFO Log directory '/tmp/kafka-logs' not found, creating it. (kafka.log.LogManager)
+[2016-07-02 16:07:10,199] INFO Loading logs. (kafka.log.LogManager)
+[2016-07-02 16:07:10,232] INFO Logs loading complete. (kafka.log.LogManager)
+[2016-07-02 16:07:10,294] INFO Starting log cleanup with a period of 300000 ms. (kafka.log.LogManager)
+[2016-07-02 16:07:10,296] INFO Starting log flusher with a default period of 9223372036854775807 ms. (kafka.log.LogManager)
+[2016-07-02 16:07:10,300] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2016-07-02 16:07:10,346] INFO Awaiting socket connections on localhost:9092. (kafka.network.Acceptor)
+[2016-07-02 16:07:10,360] INFO [Socket Server on Broker 0], Started 1 acceptor threads (kafka.network.SocketServer)
+[2016-07-02 16:07:10,380] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2016-07-02 16:07:10,381] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2016-07-02 16:07:10,463] INFO Creating /controller (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2016-07-02 16:07:10,484] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2016-07-02 16:07:10,485] INFO 0 successfully elected as leader (kafka.server.ZookeeperLeaderElector)
+[2016-07-02 16:07:10,612] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2016-07-02 16:07:10,613] INFO [ExpirationReaper-0], Starting  (kafka.server.DelayedOperationPurgatory$ExpiredOperationReaper)
+[2016-07-02 16:07:10,657] INFO [GroupCoordinator 0]: Starting up. (kafka.coordinator.GroupCoordinator)
+[2016-07-02 16:07:10,657] INFO [GroupCoordinator 0]: Startup complete. (kafka.coordinator.GroupCoordinator)
+[2016-07-02 16:07:10,691] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 37 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 16:07:10,708] INFO [ThrottledRequestReaper-Produce], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2016-07-02 16:07:10,708] INFO [ThrottledRequestReaper-Fetch], Starting  (kafka.server.ClientQuotaManager$ThrottledRequestReaper)
+[2016-07-02 16:07:10,729] INFO Will not load MX4J, mx4j-tools.jar is not in the classpath (kafka.utils.Mx4jLoader$)
+[2016-07-02 16:07:10,779] INFO Creating /brokers/ids/0 (is it secure? false) (kafka.utils.ZKCheckedEphemeral)
+[2016-07-02 16:07:10,795] INFO New leader is 0 (kafka.server.ZookeeperLeaderElector$LeaderChangeListener)
+[2016-07-02 16:07:10,814] INFO Result of znode creation is: OK (kafka.utils.ZKCheckedEphemeral)
+[2016-07-02 16:07:10,816] INFO Registered broker 0 at path /brokers/ids/0 with addresses: PLAINTEXT -> EndPoint(localhost,9092,PLAINTEXT) (kafka.utils.ZkUtils)
+[2016-07-02 16:07:10,816] WARN No meta.properties file under dir /tmp/kafka-logs/meta.properties (kafka.server.BrokerMetadataCheckpoint)
+[2016-07-02 16:07:10,866] INFO Kafka version : 0.10.0.0 (org.apache.kafka.common.utils.AppInfoParser)
+[2016-07-02 16:07:10,866] INFO Kafka commitId : b8642491e78c5a13 (org.apache.kafka.common.utils.AppInfoParser)
+[2016-07-02 16:07:10,867] INFO [Kafka Server 0], started (kafka.server.KafkaServer)
+[2016-07-02 16:07:29,821] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions [rules,0] (kafka.server.ReplicaFetcherManager)
+[2016-07-02 16:07:29,841] INFO Completed load of log rules-0 with log end offset 0 (kafka.log.Log)
+[2016-07-02 16:07:29,843] INFO Created log for partition [rules,0] in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 0.10.0-IV1, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> true, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> delete, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2016-07-02 16:07:29,844] INFO Partition [rules,0] on broker 0: No checkpointed highwatermark is found for partition [rules,0] (kafka.cluster.Partition)
+[2016-07-02 16:07:31,083] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions [forex,0] (kafka.server.ReplicaFetcherManager)
+[2016-07-02 16:07:31,088] INFO Completed load of log forex-0 with log end offset 0 (kafka.log.Log)
+[2016-07-02 16:07:31,090] INFO Created log for partition [forex,0] in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 0.10.0-IV1, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> true, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> delete, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2016-07-02 16:07:31,091] INFO Partition [forex,0] on broker 0: No checkpointed highwatermark is found for partition [forex,0] (kafka.cluster.Partition)
+[2016-07-02 16:07:32,439] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions [forexJ,0] (kafka.server.ReplicaFetcherManager)
+[2016-07-02 16:07:32,442] INFO Completed load of log forexJ-0 with log end offset 0 (kafka.log.Log)
+[2016-07-02 16:07:32,443] INFO Created log for partition [forexJ,0] in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 0.10.0-IV1, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> true, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> delete, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2016-07-02 16:07:32,444] INFO Partition [forexJ,0] on broker 0: No checkpointed highwatermark is found for partition [forexJ,0] (kafka.cluster.Partition)
+[2016-07-02 16:07:33,851] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions [ticks,0] (kafka.server.ReplicaFetcherManager)
+[2016-07-02 16:07:33,853] INFO Completed load of log ticks-0 with log end offset 0 (kafka.log.Log)
+[2016-07-02 16:07:33,854] INFO Created log for partition [ticks,0] in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 0.10.0-IV1, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> true, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> delete, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2016-07-02 16:07:33,855] INFO Partition [ticks,0] on broker 0: No checkpointed highwatermark is found for partition [ticks,0] (kafka.cluster.Partition)
+[2016-07-02 16:07:35,251] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions [oandaticks,0] (kafka.server.ReplicaFetcherManager)
+[2016-07-02 16:07:35,255] INFO Completed load of log oandaticks-0 with log end offset 0 (kafka.log.Log)
+[2016-07-02 16:07:35,256] INFO Created log for partition [oandaticks,0] in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 0.10.0-IV1, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> true, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> delete, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2016-07-02 16:07:35,257] INFO Partition [oandaticks,0] on broker 0: No checkpointed highwatermark is found for partition [oandaticks,0] (kafka.cluster.Partition)
+[2016-07-02 16:07:36,740] INFO [ReplicaFetcherManager on broker 0] Removed fetcher for partitions [histticks,0] (kafka.server.ReplicaFetcherManager)
+[2016-07-02 16:07:36,743] INFO Completed load of log histticks-0 with log end offset 0 (kafka.log.Log)
+[2016-07-02 16:07:36,745] INFO Created log for partition [histticks,0] in /tmp/kafka-logs with properties {compression.type -> producer, message.format.version -> 0.10.0-IV1, file.delete.delay.ms -> 60000, max.message.bytes -> 1000012, message.timestamp.type -> CreateTime, min.insync.replicas -> 1, segment.jitter.ms -> 0, preallocate -> false, min.cleanable.dirty.ratio -> 0.5, index.interval.bytes -> 4096, unclean.leader.election.enable -> true, retention.bytes -> -1, delete.retention.ms -> 86400000, cleanup.policy -> delete, flush.ms -> 9223372036854775807, segment.ms -> 604800000, segment.bytes -> 1073741824, retention.ms -> 604800000, message.timestamp.difference.max.ms -> 9223372036854775807, segment.index.bytes -> 10485760, flush.messages -> 9223372036854775807}. (kafka.log.LogManager)
+[2016-07-02 16:07:36,745] INFO Partition [histticks,0] on broker 0: No checkpointed highwatermark is found for partition [histticks,0] (kafka.cluster.Partition)
+[2016-07-02 16:17:10,643] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 16:27:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 16:37:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 16:47:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 16:57:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 17:07:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 17:17:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 17:27:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 17:37:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 17:47:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 17:57:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 18:07:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 18:17:10,643] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 18:27:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 18:37:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 18:47:10,643] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 18:57:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 19:07:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 19:17:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 19:27:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 19:37:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 19:47:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 19:57:10,643] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 20:07:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 20:17:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 20:27:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 20:37:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 20:47:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 20:57:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 21:07:10,642] INFO [Group Metadata Manager on Broker 0]: Removed 0 expired offsets in 0 milliseconds. (kafka.coordinator.GroupMetadataManager)
+[2016-07-02 21:15:03,126] INFO [Kafka Server 0], shutting down (kafka.server.KafkaServer)
+[2016-07-02 21:15:03,148] INFO [Kafka Server 0], Starting controlled shutdown (kafka.server.KafkaServer)
+[2016-07-02 21:15:03,469] WARN Session 0x155ad38809e0000 for server localhost/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2016-07-02 21:15:03,572] INFO zookeeper state changed (Disconnected) (org.I0Itec.zkclient.ZkClient)
+[2016-07-02 21:15:03,572] INFO Waiting for keeper state SyncConnected (org.I0Itec.zkclient.ZkClient)
+[2016-07-02 21:15:05,129] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:05,129] WARN Session 0x155ad38809e0000 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2016-07-02 21:15:06,942] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:06,943] WARN Session 0x155ad38809e0000 for server null, unexpected error, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1081)
+[2016-07-02 21:15:08,982] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:14,989] INFO Client session timed out, have not heard from server in 7946ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:16,739] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:22,745] INFO Client session timed out, have not heard from server in 7656ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:24,346] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:30,353] INFO Client session timed out, have not heard from server in 7507ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:31,946] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:37,951] INFO Client session timed out, have not heard from server in 7498ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:39,886] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:45,892] INFO Client session timed out, have not heard from server in 7841ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:47,589] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:53,595] INFO Client session timed out, have not heard from server in 7603ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:15:55,105] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:01,111] INFO Client session timed out, have not heard from server in 7415ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:02,973] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:08,980] INFO Client session timed out, have not heard from server in 7767ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:10,975] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:16,982] INFO Client session timed out, have not heard from server in 7902ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:19,007] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:25,007] INFO Client session timed out, have not heard from server in 7925ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:26,525] INFO Opening socket connection to server localhost/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error) (org.apache.zookeeper.ClientCnxn)
+[2016-07-02 21:16:32,531] INFO Client session timed out, have not heard from server in 7424ms for sessionid 0x155ad38809e0000, closing socket connection and attempting reconnect (org.apache.zookeeper.ClientCnxn)
