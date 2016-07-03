@@ -1,4 +1,4 @@
-package com.fcnlabs.hist
+package com.fcnlabs.persist
 
 import com.datastax.driver.core.LocalDate
 import com.datastax.driver.core.exceptions.*
