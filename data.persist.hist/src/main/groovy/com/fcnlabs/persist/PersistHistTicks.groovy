@@ -37,9 +37,11 @@ class PersistHistTicks {
         Properties props = new Properties()
         props.put("bootstrap.servers", kafka_host + ":" + port.toString())
         props.put("group.id", "persist.hist.stream")
+        props.put("client.id", "10")
         props.put("enable.auto.commit", "true")
         props.put("auto.commit.interval.ms", "1000")
         props.put("session.timeout.ms", "30000")
+        props.put("max.poll.records", "10")
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
 
