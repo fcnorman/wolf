@@ -52,7 +52,6 @@ class PublishHistTicks {
                 file.eachLine { line ->
                     totalRecords++
                 }
-                file.close()
 
                 File fileSecondPass = new File ( filename )
 
@@ -83,7 +82,6 @@ class PublishHistTicks {
                 // interval between two times in milliseconds
                 Long interval = endTime.getTime() - startTime.getTime()
                 log.info("Stop time: " + new Date().toString() + " Transactions Per Minute: " + (processedRecords / (interval * 60000)).toString())
-                fileSecondPass.close()
             }
         }
     }
