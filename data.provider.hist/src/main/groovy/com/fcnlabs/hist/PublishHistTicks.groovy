@@ -52,6 +52,7 @@ class PublishHistTicks {
                 file.eachLine { line ->
                     totalRecords++
                 }
+                log.debug("Total records in csv: " + totalRecords.toString())
 
                 File fileSecondPass = new File ( filename )
 
@@ -61,8 +62,13 @@ class PublishHistTicks {
                 log.info("Start time: " + new Date().toString())
                 fileSecondPass.eachLine { line ->
 
+                    //log.debug("Before new ProducerRecord")
+
                     // Create message to be sent to "tick_topic" topic with the tick
                     ProducerRecord<String, String> data = new ProducerRecord<String, String>("histticks", line)
+
+
+                    //log.debug("Before producer.send")
 
                     // Send the message
                     producer.send(data)

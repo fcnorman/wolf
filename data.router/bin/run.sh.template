@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm *.log
+
 ZK_HOST=`cat .zkhost.properties`
 export ZK_HOST=$ZK_HOST
 
