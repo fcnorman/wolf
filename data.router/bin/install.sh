@@ -24,17 +24,19 @@ fi
 
 # new
 # if the new kafka version is not installed...
-if [ ! -d kafka_2.11-0.10.0.0 ]; then
-   # ...then install it
-   wget http://apache.mirrors.hoobly.com/kafka/0.10.0.0/kafka_2.11-0.10.0.0.tgz
-   tar xvzf kafka_2.11-0.10.0.0.tgz
-   rm -rf *.tgz
-fi
+#if [ ! -d kafka_2.11-0.10.0.0 ]; then
+#   # ...then install it
+#   wget http://apache.mirrors.hoobly.com/kafka/0.10.0.0/kafka_2.11-0.10.0.0.tgz
+#   tar xvzf kafka_2.11-0.10.0.0.tgz
+#   rm -rf *.tgz
+#fi
 
 # new
-# if a snapshot build of Kafka is available, install that too
-if [ -f kafka_2.10-0.10.1.0-SNAPSHOT.tgz ]; then
+# if a snapshot build of Kafka is available, install that
+if [ ! -d kafka ]; then
+   cp $HOME/kafka_2.10-0.10.1.0-SNAPSHOT.tgz .
    gunzip kafka_2.10-0.10.1.0-SNAPSHOT.tgz
    tar xvf kafka_2.10-0.10.1.0-SNAPSHOT.tar
+   mv kafka_2.10-0.10.1.0-SNAPSHOT kafka
 fi
 
