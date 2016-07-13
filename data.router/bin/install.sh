@@ -30,3 +30,11 @@ if [ ! -d kafka_2.11-0.10.0.0 ]; then
    tar xvzf kafka_2.11-0.10.0.0.tgz
    rm -rf *.tgz
 fi
+
+# new
+# if a snapshot build of Kafka is available, install that too
+if [ -f kafka_2.10-0.10.1.0-SNAPSHOT.tgz ]; then
+   gunzip kafka_2.10-0.10.1.0-SNAPSHOT.tgz
+   tar xvf kafka_2.10-0.10.1.0-SNAPSHOT.tar
+fi
+
