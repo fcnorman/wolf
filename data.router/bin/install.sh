@@ -38,5 +38,6 @@ if [ ! -d kafka ]; then
    gunzip kafka_2.10-0.10.1.0-SNAPSHOT.tgz
    tar xvf kafka_2.10-0.10.1.0-SNAPSHOT.tar
    mv kafka_2.10-0.10.1.0-SNAPSHOT kafka
+   rm *.tar
 fi
 
