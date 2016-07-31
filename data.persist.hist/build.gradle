@@ -36,7 +36,7 @@ dependencies {
 
     //compile 'org.apache.kafka:kafka-clients:0.10.0.0'
     compile files('libs/kafka_2.10-0.10.1.0-SNAPSHOT.jar')
-    compile files('libs/kafka-clients_2.10-0.10.1.0-SNAPSHOT.jar')
+    compile files('libs/kafka-clients-0.10.1.0-SNAPSHOT.jar')
 
     testCompile 'junit:junit:4.12'
 }

@@ -1,20 +1,19 @@
 #!/bin/bash
 
-PWD=`pwd`
+WOLF_PWD=`pwd`
 git pull
 
-cd data.router
-source ./bin/run.sh
+cd data.router/bin
+source ./run.sh
 
-cd $PWD
+cd $WOLF_PWD
 
 cd data.provider.hist
 gradle shadowJar
 source ./run-app.sh
 
-cd $PWD
+cd $WOLF_PWD
 cd data.persist.hist
 gradle shadowJar
 source ./run-app.sh
-
 

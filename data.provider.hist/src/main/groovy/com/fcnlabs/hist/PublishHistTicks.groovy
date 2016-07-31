@@ -5,6 +5,7 @@ import org.apache.kafka.clients.producer.Producer
 import org.apache.kafka.clients.producer.ProducerRecord
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
+import java.io.JavaFileNotFoundException
 
 class PublishHistTicks {
 
@@ -47,7 +48,12 @@ class PublishHistTicks {
 
                 log.info("Processing " + filename)
 
-                File file = new File ( filename )
+                try {
+                    File file = new File ( filename )
+                } catch (JavaFileNotFoundException e) {
+                    log.info("File " + filename + " not found.")
+                    break
+                }
 
                 file.eachLine { line ->
                     totalRecords++
@@ -81,7 +87,7 @@ class PublishHistTicks {
                         Date intervalTime = new Date()
                         // interval between two times in milliseconds
                         Long interimInterval = intervalTime.getTime() - startTime.getTime()
-                        log.info("Interval time: " + intervalTime.toString() + " Transactions Per Minute: " + (processedRecords / (interimInterval * 60000)).toString())
+                        log.info(""Transactions Per Minute: " + (processedRecords / (interimInterval * 60000)).toString())
                     }
                 }
                 Date endTime = new Date()
