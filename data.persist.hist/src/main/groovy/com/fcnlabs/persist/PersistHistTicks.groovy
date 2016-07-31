@@ -59,14 +59,14 @@ class PersistHistTicks {
         Date startTime = new Date()
         Integer processedRecords = 0
         Double tickler = 1000
-        log.debug("About to do while(true)")
+        ////log.debug("About to do while(true)")
         while (true) {
-            log.debug("Inside while loop.  About to poll.")
+            ////log.debug("Inside while loop.  About to poll.")
             // Get records from the Kafka topic 'ticks'
             ConsumerRecords<String, String> records = consumer.poll(100)
-            log.debug("Back from poll.  records.size() is: " + records.size().toString())
+            ////log.debug("Back from poll.  records.size() is: " + records.size().toString())
             for (ConsumerRecord<String, String> record : records) {
-                log.debug("offset = " + record.offset() + " key = " + record.key() + " value = " + record.value())
+                ////log.debug("offset = " + record.offset() + " key = " + record.key() + " value = " + record.value())
 
                 // record.value() example:   20120201 000003660,1.306600,1.306770,0
                 //
@@ -90,9 +90,14 @@ class PersistHistTicks {
 
                 def (rawDay, rawNanos) = recValues[0].tokenize(' ')
 
-                LocalDate day = new LocalDate().fromYearMonthDay(rawDay.substring(0,4).toInteger(),
-                                                                  rawDay.substring(4,2).toInteger(),
-                                                                  rawDay.substring(6,2).toInteger())
+                ////log.debug("About to attempt LocalDate.")
+                int tempY = rawDay.substring(0,4).toInteger()
+                int tempM = rawDay.substring(4,6).toInteger()
+                int tempD = rawDay.substring(6,8).toInteger()
+
+                LocalDate day = LocalDate.fromYearMonthDay(rawDay.substring(0,4).toInteger(),
+                                                                  rawDay.substring(4,6).toInteger(),
+                                                                  rawDay.substring(6,8).toInteger())
 
                 //Date dateNanos = new Date().parse('YYYYMMDD HHMMSSNNN', recValues[0], TimeZone.getTimeZone("EST"))
 
@@ -100,14 +105,15 @@ class PersistHistTicks {
                 //                                                  dateNanos.getMonth(),
                 //                                                  dateNanos.getDay())
 
+                ////log.debug("About to calc nanos.")
                 Long nanos = 0
                 nanos += rawNanos.substring(0,2).toLong() * 1000000000 * 60 *60
-                nanos += rawNanos.substring(2,2).toLong() * 1000000000 * 60
-                nanos += rawNanos.substring(4,2).toLong() * 1000000000
-                nanos += rawNanos.substring(6,3).toLong() * 1000000
+                nanos += rawNanos.substring(2,4).toLong() * 1000000000 * 60
+                nanos += rawNanos.substring(4,6).toLong() * 1000000000
+                nanos += rawNanos.substring(6,9).toLong() * 1000000
 
-                Double bid = Double.parseDouble(recValues[1])
-                Double ask = Double.parseDouble(recValues[2])
+                Float bid = Float.parseFloat(recValues[1])
+                Float ask = Float.parseFloat(recValues[2])
                 //Integer volume = Integer.parseInt(recValues[3])
 
                 //System.out.println(fcnDateTime);
@@ -131,7 +137,7 @@ class PersistHistTicks {
                 //) WITH compaction = {'class' : 'LeveledCompactionStrategy' };
 
                 try {
-
+                    ////log.debug("About to INSERT day " + day.toString() + " nanos " + nanos.toString() + " bid " + bid.toString() + " ask " + ask.toString())
                     client.getSession().execute(
                         "INSERT INTO hist_ticks.eurusd_ticks (day, nanos, bid, ask) VALUES (?, ?, ?, ?)",
                             day, nanos, bid, ask)
