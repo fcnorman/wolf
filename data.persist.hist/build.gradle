@@ -35,7 +35,10 @@ dependencies {
     compile 'org.slf4j:slf4j-nop:1.7.21'
     compile 'org.apache.commons:commons-csv:1.4'
 
-    compile 'org.apache.kafka:kafka-clients:0.10.0.0'
+    //compile 'org.apache.kafka:kafka-clients:0.10.0.0'
+    compile files('libs/kafka-0.10.1.0-SNAPSHOT.jar')
+    compile files('libs/kafka-clients-0.10.1.0-SNAPSHOT.jar')
+
     //compile 'org.apache.kafka:kafka-streams:0.10.0.0'
 
     testCompile 'junit:junit:4.12'

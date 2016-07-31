@@ -22,20 +22,22 @@ class PersistHistTicks {
         // Configure Cassandra Connection
         final CassandraConnector client = new CassandraConnector()
         final String ipAddress = cassandra_host;
-        final int port = args.length > 1 ? Integer.parseInt(args[1]) : 9042;
-        log.info("Connecting to IP Address " + ipAddress + ":" + port + "...");
+        final int cassandra_port = 9042;
+        final int kafka_port = 9092;
+        log.info("Connecting to IP Address " + ipAddress + ":" + cassandra_port + "...");
 
         // Connect To Cassandra
         try {
-            client.connect(ipAddress, port);
+            client.connect(ipAddress, cassandra_port);
         } catch (Exception e) {
             log.error("Error connecting to Cassandra." + "\n\n" + e)
             return;
         }
 
+        log.debug("Setting Kafka Connection properties")
         // Configure Kafka Connection
         Properties props = new Properties()
-        props.put("bootstrap.servers", kafka_host + ":" + port.toString())
+        props.put("bootstrap.servers", kafka_host + ":" + kafka_port.toString())
         props.put("group.id", "persist.hist.stream")
         props.put("client.id", "10")
         props.put("enable.auto.commit", "true")
@@ -45,9 +47,11 @@ class PersistHistTicks {
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
 
+        log.debug("About to create KafkaConsumer")
         // Connect To Kafka
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props)
 
+        log.debug("About to consumer.subscribe to histticks")
         // Subscribe To 'ticks' topic
         consumer.subscribe(Arrays.asList("histticks"))
 
@@ -55,9 +59,12 @@ class PersistHistTicks {
         Date startTime = new Date()
         Integer processedRecords = 0
         Double tickler = 1000
+        log.debug("About to do while(true)")
         while (true) {
+            log.debug("Inside while loop.  About to poll.")
             // Get records from the Kafka topic 'ticks'
             ConsumerRecords<String, String> records = consumer.poll(100)
+            log.debug("Back from poll.  records.size() is: " + records.size().toString())
             for (ConsumerRecord<String, String> record : records) {
                 log.debug("offset = " + record.offset() + " key = " + record.key() + " value = " + record.value())
 
