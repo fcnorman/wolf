@@ -1,3 +1,5 @@
+*.swp
+run-app.sh
 .idea/
 */.idea/
 **/.idea/
