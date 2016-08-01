@@ -1,22 +1,23 @@
 package com.fcnlabs.persist
 
-import com.datastax.driver.core.exceptions.*
-import org.apache.kafka.clients.consumer.ConsumerRecord
-import org.apache.kafka.clients.consumer.ConsumerRecords
-import org.apache.kafka.clients.consumer.KafkaConsumer
-import org.json.simple.JSONObject
-import org.json.simple.JSONValue
-
 import java.time.LocalDateTime
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
+import com.datastax.driver.core.exceptions.*
+import org.apache.kafka.clients.consumer.ConsumerRecord
+import org.apache.kafka.clients.consumer.ConsumerRecords
+import org.apache.kafka.clients.consumer.KafkaConsumer
+
+import org.json.simple.JSONObject
+import org.json.simple.JSONValue
+
 import org.apache.logging.log4j.Logger
 import org.apache.logging.log4j.LogManager
 
-class PersistTickStream {
+class PersistOandaTicks {
 
-    private static final Logger log = LogManager.getLogger(PersistTickStream.class)
+    private static final Logger log = LogManager.getLogger(PersistOandaTicks.class)
 
     public static void main(String[] args) {
         // Get configs from environment variables and
@@ -44,21 +45,26 @@ class PersistTickStream {
             return
         }
 
+        log.debug("Setting Kafka Connection properties")
         // Configure Kafka Connection
         Properties props = new Properties()
         props.put("bootstrap.servers", kafka_host + ":9092")
-        props.put("group.id", "persist.tick.stream")
+        props.put("group.id", "persist.oanda.ticks")
+        props.put("client.id", "20")
         props.put("enable.auto.commit", "true")
         props.put("auto.commit.interval.ms", "1000")
         props.put("session.timeout.ms", "30000")
+        props.put("max.poll.records", "10")
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
 
+        log.debug("About to create KafkaConsumer")
         // Connect To Kafka
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props)
 
-        // Subscribe To 'ticks' topic
-        consumer.subscribe(Arrays.asList("ticks"))
+        log.debug("About to consumer.subscribe to oandaticks")
+        // Subscribe To 'oandaticks' topic
+        consumer.subscribe(Arrays.asList("oandaticks"))
 
         // Loop until we exit via Exception
         while (true) {
@@ -66,6 +72,17 @@ class PersistTickStream {
             ConsumerRecords<String, String> records = consumer.poll(100)
             for (ConsumerRecord<String, String> record : records) {
                 log.debug("offset = " + record.offset() + " key = " + record.key() + " value = " + record.value())
+
+                // TODO - make this real
+                // record.value() example:   20120201 000003660,1.306600,1.306770,0
+                //
+                //
+                // Row Fields:
+                // DateTime Stamp,Bid Quote,Ask Quote,Volume
+                //
+                // DateTime Stamp Format:
+                // ...
+
 
                 Object obj = JSONValue.parse(record.value())
                 JSONObject tick = (JSONObject) obj
@@ -87,10 +104,31 @@ class PersistTickStream {
 
                     log.debug("Inst: " + instrument + " Time: " + time + " Big: " + bid + " Ask: " + ask)
 
+                    //CREATE TABLE oanda_ticks.eurusd_ticks (
+                    //   day date,
+                    //   nanos time,
+                    //   ask float,
+                    //   bid float,
+                    //   PRIMARY KEY (day, nanos)
+                    //) WITH CLUSTERING ORDER BY (nanos ASC)
+                    //   AND bloom_filter_fp_chance = 0.1
+                    //   AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+                    //   AND comment = ''
+                    //   AND compaction = {'class': 'org.apache.cassandra.db.compaction.LeveledCompactionStrategy'}
+                    //   AND compression = {'chunk_length_in_kb': '64', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+                    //   AND crc_check_chance = 1.0
+                    //   AND dclocal_read_repair_chance = 0.1
+                    //   AND default_time_to_live = 0
+                    //   AND gc_grace_seconds = 864000
+                    //   AND max_index_interval = 2048
+                    //   AND memtable_flush_period_in_ms = 0
+                    //   AND min_index_interval = 128
+                    //   AND read_repair_chance = 0.0
+
                     try {
                         client.getSession().execute(
-                            "INSERT INTO tick_keyspace.eurusd_ticks (ts, bid, ask) VALUES (?, ?, ?)",
-                                time, bid, ask)
+                            "INSERT INTO oanda_ticks.eurusd_ticks (day, nanos, bid, ask) VALUES (?, ?, ?, ?)",
+                                day, nanos, bid, ask)
                     } catch (NoHostAvailableException e) {
                         log.error("Error inserting tick to Cassandra.  NoHostAvailable." + "\n\n" + e)
                         client.close()
@@ -117,5 +155,6 @@ class PersistTickStream {
         }
         // after while loop...theoretical
         client.close()
+        consumer.close()
     }
 }

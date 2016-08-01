@@ -38,7 +38,7 @@ class PersistHistTicks {
         // Configure Kafka Connection
         Properties props = new Properties()
         props.put("bootstrap.servers", kafka_host + ":" + kafka_port.toString())
-        props.put("group.id", "persist.hist.stream")
+        props.put("group.id", "persist.hist.ticks")
         props.put("client.id", "10")
         props.put("enable.auto.commit", "true")
         props.put("auto.commit.interval.ms", "1000")
@@ -52,7 +52,7 @@ class PersistHistTicks {
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props)
 
         log.debug("About to consumer.subscribe to histticks")
-        // Subscribe To 'ticks' topic
+        // Subscribe To 'histticks' topic
         consumer.subscribe(Arrays.asList("histticks"))
 
         // Loop until we exit via Exception
