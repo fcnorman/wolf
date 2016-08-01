@@ -13,7 +13,6 @@ class PublishHistTicks {
 
     public static void main(String[] args) {
         def env                 = System.getenv()
-        String cassandra_host   = env['CQLSH_HOST']
         String kafka_host       = env['KAFKA_HOST']
         String histdata_dir     = env['HISTDATA_DIR']
 
@@ -73,7 +72,6 @@ class PublishHistTicks {
                     // Create message to be sent to "tick_topic" topic with the tick
                     ProducerRecord<String, String> data = new ProducerRecord<String, String>("histticks", line)
 
-
                     //log.debug("Before producer.send")
 
                     // Send the message
@@ -96,5 +94,6 @@ class PublishHistTicks {
                 log.info("Stop time: " + new Date().toString() + " Transactions Per Minute: " + (processedRecords / (interval * 60000)).toString())
             }
         }
+        producer.close()
     }
 }
