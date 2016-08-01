@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="INFO">
+<Configuration status="ERROR">
     <Appenders>
         <Console name="console" target="SYSTEM_OUT">
             <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"/>
         </Console>
     </Appenders>
     <Loggers>
-        <Root level="INFO" additivity="false">
+        <Root level="ERROR" additivity="false">
             <AppenderRef ref="console"/>
         </Root>
+        <Logger name="com.fcnlabs.persist.PersistOandaTicks" level="DEBUG" includeLocation="false">
+            <AppenderRef ref="console"/>
+        </Logger>
     </Loggers>
 </Configuration>

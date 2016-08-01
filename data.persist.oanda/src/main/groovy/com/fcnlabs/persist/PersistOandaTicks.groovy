@@ -70,23 +70,18 @@ class PersistOandaTicks {
         // Loop until we exit via Exception
         while (true) {
             // Get records from the Kafka topic 'ticks'
+            log.debug("about to poll")
             ConsumerRecords<String, String> records = consumer.poll(100)
             for (ConsumerRecord<String, String> record : records) {
                 log.debug("offset = " + record.offset() + " key = " + record.key() + " value = " + record.value())
 
-                // TODO - make this real
-                // record.value() example:   20120201 000003660,1.306600,1.306770,0
-                //
+                // record.value() = {"tick":{"instrument":"EUR_USD","time":"2016-08-01T11:54:01.613449Z","bid":1.11593,"ask":1.11607}}
                 //
                 // Row Fields:
                 // DateTime Stamp,Bid Quote,Ask Quote,Volume
                 //
                 // DateTime Stamp Format:
                 // ...
-
-                // TODO - fix this
-                LocalDate day = null
-                Long nanos = 0
 
                 Object obj = JSONValue.parse(record.value())
                 JSONObject tick = (JSONObject) obj
@@ -103,10 +98,21 @@ class PersistOandaTicks {
 
                     String instrument = tick.get("instrument").toString()
                     String time = tick.get("time").toString()
-                    double bid = Double.parseDouble(tick.get("bid").toString())
-                    double ask = Double.parseDouble(tick.get("ask").toString())
+                    Float bid = Float.parseFloat(tick.get("bid").toString())
+                    Float ask = Float.parseFloat(tick.get("ask").toString())
 
                     log.debug("Inst: " + instrument + " Time: " + time + " Big: " + bid + " Ask: " + ask)
+
+                    LocalDate day = LocalDate.fromYearMonthDay(time.substring(0,4).toInteger(),
+                                                               time.substring(5,7).toInteger(),
+                                                               time.substring(8,10).toInteger())
+
+
+                    Long nanos = 0
+                    nanos += time.substring(11,13).toLong() * 1000000000 * 60 * 60
+                    nanos += time.substring(14,16).toLong() * 1000000000 * 60
+                    nanos += time.substring(17,19).toLong() * 1000000000
+                    nanos += time.substring(20,26).toLong()
 
                     //CREATE TABLE oanda_ticks.eurusd_ticks (
                     //   day date,
