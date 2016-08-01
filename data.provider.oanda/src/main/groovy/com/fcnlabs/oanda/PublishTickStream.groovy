@@ -68,7 +68,7 @@ class PublishTickStream {
 
         HttpEntity entity = null
         Integer processedRecords = 0
-        Integer ticker = 1000
+        Integer tickler = 1000
         Date startTime = new Date()
         log.info("Start time: " + new Date().toString())
 
@@ -108,7 +108,7 @@ class PublishTickStream {
                         Date intervalTime = new Date()
                         // interval between two times in milliseconds
                         Long interimInterval = intervalTime.getTime() - startTime.getTime()
-                        log.info(""Transactions Per Minute: " + (processedRecords / (interimInterval * 60000)).toString())
+                        log.info("Transactions Per Minute: " + (processedRecords / (interimInterval * 60000)).toString())
                     }
                 }
             } else {

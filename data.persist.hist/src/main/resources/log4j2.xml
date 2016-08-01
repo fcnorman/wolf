@@ -9,5 +9,8 @@
         <Root level="ERROR" additivity="false">
             <AppenderRef ref="console"/>
         </Root>
+        <Logger name="com.fcnlabs.persist.PersistHistTicks" level="INFO" includeLocation="false">
+            <AppenderRef ref="console"/>
+        </Logger>   
     </Loggers>
 </Configuration>
