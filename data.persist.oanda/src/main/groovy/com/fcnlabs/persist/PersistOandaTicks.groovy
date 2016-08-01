@@ -1,5 +1,6 @@
 package com.fcnlabs.persist
 
+import com.datastax.driver.core.LocalDate
 import java.time.LocalDateTime
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
@@ -83,6 +84,9 @@ class PersistOandaTicks {
                 // DateTime Stamp Format:
                 // ...
 
+                // TODO - fix this
+                LocalDate day = null
+                Long nanos = 0
 
                 Object obj = JSONValue.parse(record.value())
                 JSONObject tick = (JSONObject) obj
