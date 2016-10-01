@@ -70,7 +70,7 @@ class PersistOandaTicks {
         // Loop until we exit via Exception
         while (true) {
             // Get records from the Kafka topic 'ticks'
-            log.debug("about to poll")
+            log.trace("about to poll")
             ConsumerRecords<String, String> records = consumer.poll(100)
             for (ConsumerRecord<String, String> record : records) {
                 log.debug("offset = " + record.offset() + " key = " + record.key() + " value = " + record.value())
