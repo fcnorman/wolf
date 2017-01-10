@@ -40,7 +40,7 @@
             <AppenderRef ref="async-log"/>
         </Root>
 
-        <Logger name="com.fcnlabs.persist.PersistOandaTicks" level="INFO" includeLocation="false">
+        <Logger name="com.fcnlabs.persist.PersistOandaTicks" level="INFO" includeLocation="false" additivity="false">
             <AppenderRef ref="async-log"/>
         </Logger>
 
