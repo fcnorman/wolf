@@ -10,6 +10,8 @@ build/
 */build/
 **/build/
 *.log
+*.err
+*.out
 run.sh
 *.class
 *.csv
