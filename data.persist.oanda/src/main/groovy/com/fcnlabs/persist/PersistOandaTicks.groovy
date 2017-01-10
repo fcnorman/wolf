@@ -68,6 +68,7 @@ class PersistOandaTicks {
         consumer.subscribe(Arrays.asList("oandaticks"))
 
         // Loop until we exit via Exception
+        Integer tickCounter = 1
         while (true) {
             // Get records from the Kafka topic 'ticks'
             log.trace("about to poll")
@@ -139,7 +140,13 @@ class PersistOandaTicks {
                         client.getSession().execute(
                             "INSERT INTO oanda_ticks.eurusd_ticks (day, nanos, bid, ask) VALUES (?, ?, ?, ?)",
                                 day, nanos, bid, ask)
-                        log.info(".")
+
+                        tickCounter += 1
+                        //log.info(".")
+                        if (tickCounter > 1000) {
+                            log.info("1000 ticks persisted.  Resetting...")
+                            tickCounter = 1
+                        }
                     } catch (NoHostAvailableException e) {
                         log.error("Error inserting tick to Cassandra.  NoHostAvailable." + "\n\n" + e)
                         client.close()
