@@ -139,6 +139,7 @@ class PersistOandaTicks {
                         client.getSession().execute(
                             "INSERT INTO oanda_ticks.eurusd_ticks (day, nanos, bid, ask) VALUES (?, ?, ?, ?)",
                                 day, nanos, bid, ask)
+                        log.info(".")
                     } catch (NoHostAvailableException e) {
                         log.error("Error inserting tick to Cassandra.  NoHostAvailable." + "\n\n" + e)
                         client.close()
